@@ -1,12 +1,25 @@
+def filler():
+    print('***' * 10)
+    pass
+
+print('Task 1')
 alice_in_wonderland = """Would you tell me, please, which way I ought to go from here?"\n"That depends a good deal on where you want to get to," said the Cat.\n"I don't much care where ——" said Alice.\n"Then it doesn't matter which way you go," said the Cat.\n"—— so long as I get somewhere," Alice added as an explanation.\n"Oh, you're sure to do that," said the Cat, "if you only walk long enough."""
 # task 01 == Розділіть змінну alice_in_wonderland так, щоб вона займала декілька фізичних лінії
 # task 02 == Знайдіть та відобразіть всі символи одинарної лапки (') у тексті
 # task 03 == Виведіть змінну alice_in_wonderland на друк
-print('Task1')
+
 print(alice_in_wonderland)
-for hui in alice_in_wonderland:
-    if hui == "a":
-        print("a")
+print('***' * 10)
+print('Task 2')
+
+for char in alice_in_wonderland:
+    if char == "'":
+        print("'")
+
+print('***' * 10)
+print('Task 3')
+print(alice_in_wonderland)
+print('***' * 10)
 """
     # Задачі 04 -10:
     # Переведіть задачі з книги "Математика, 5 клас"
@@ -19,7 +32,13 @@ for hui in alice_in_wonderland:
 моря становить 37 800 км2. Яку площу займають Чорне та Азов-
 ське моря разом?
 """
+print("Task 4")
 
+area_black = 436402
+area_azov = 37800
+total_area = area_black + area_azov
+print(f"Total area = Black sea ({area_black}) + Azov sea ({area_azov}) = {total_area}")
+filler()
 
 # task 05
 """
@@ -28,8 +47,15 @@ for hui in alice_in_wonderland:
 250 449 товарів. На другому та третьому – 222 950 товарів.
 Знайдіть кількість товарів, що розміщені на кожному складі.
 """
-
-
+print('Task 5')
+first_second = 250449
+second_third = 222950
+total_items = 375291
+third = total_items - first_second
+second = total_items - third
+first = total_items - third
+print(f'First warehouse = {first}, second warehouse = {second}, third warehouse = {third}')
+filler()
 # task 06
 """
 Михайло разом з батьками вирішили купити комп’ютер, ско-
@@ -37,8 +63,11 @@ for hui in alice_in_wonderland:
 вати необхідно буде півтора року по 1179 грн/місяць. Обчисліть
 вартість комп’ютера.
 """
-
-
+print('Task 6')
+payment = 1179
+total_price = payment * 6
+print(total_price)
+filler()
 # task 07
 """
 Знайди остачу від діленя чисел:
@@ -46,8 +75,15 @@ a) 8019 : 8     d) 7248 : 6
 b) 9907 : 9     e) 7128 : 5
 c) 2789 : 5     f) 19224 : 9
 """
-
-
+print('Task 7')
+a = 8019 % 8
+b = 9907 % 9
+c = 2789 % 5
+d = 7248 % 6
+e = 7128 % 5
+f = 19224 % 9
+print(f' a = {a}\n b = {b}\n c = {c}\n d = {d}\n e = {e}\n f = {f}')
+filler()
 # task 08
 """
 Іринка, готуючись до свого дня народження, склала список того,
@@ -60,7 +96,15 @@ c) 2789 : 5     f) 19224 : 9
 Торт            1           350 грн
 Вода            3           21 грн
 """
-
+print('Task 8')
+pizza_large = 274
+pize_medium = 218
+juice = 35
+cake = 350
+water = 21
+total_price_birthday = (pizza_large * 4) + (pize_medium*2) + (juice*4) + cake + (water * 3)
+print(total_price_birthday)
+filler()
 
 # task 09
 """
@@ -69,7 +113,11 @@ c) 2789 : 5     f) 19224 : 9
 розміщено щонайбільше 8 фото. Скільки сторінок знадобиться
 Ігорю, щоб вклеїти всі фото?
 """
-
+print("Task 9")
+total_photo = 232
+pages = 232 / 8
+print(pages)
+filler()
 
 # task 10
 """
@@ -82,3 +130,11 @@ c) 2789 : 5     f) 19224 : 9
 равку під час цієї подорожі, кожного разу заправляючи пов-
 ний бак?
 """
+print("Task 10")
+distance = 1600
+tank = 48
+total_gas = (distance/100)*9
+print(f'Total gas = {total_gas}')
+total_refuel = total_gas / tank
+print(f'Total refuels = {total_refuel}')
+filler()
